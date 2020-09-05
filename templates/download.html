@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Download</title>
+</head>
+<body>
+<h3>List for downloading</h3>
+<ul>
+{% for file in file_list %}
+<li><a href="{{ url_for('downloading',filename= file) }}" methods="GET">{{ file }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
