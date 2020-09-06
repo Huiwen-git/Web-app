@@ -1,0 +1,12 @@
+<!doctype html>
+<title>Results of your input</title>
+<h3>The model with your input is solved successfully!</h3>
+<h3>To be updated -- Guidence for reading the results:</h3>
+<h3>Your results are:"</h3>
+<body>
+
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+</body>
